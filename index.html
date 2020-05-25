@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Compare</title>
+  <style>
+    .compare { max-width: 600px; margin: 40px auto; position: relative; }
+    .compare img { width: 100%; display: block; }
+    .slider { position: absolute; top: 0; left: 50%; width: 4px; height: 100%; background: white; cursor: ew-resize; }
+    .before { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Before & After</h1>
+  <div class="compare">
+    <img src="https://via.placeholder.com/600x400?text=After" alt="After">
+    <img src="https://via.placeholder.com/600x400?text=Before" class="before" alt="Before">
+    <div class="slider" style="left: 50%;"></div>
+  </div>
+  <p style="text-align:center;">(Use CSS/JS to drag slider in real project)</p>
+</body>
+</html>
